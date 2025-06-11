@@ -1,39 +1,46 @@
-
 body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f2f3;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  background-color: #1e1e1e;
-  font-family: sans-serif;
+  overflow: hidden;
 }
 
-.camera-wrapper {
+h1 {
+  color: #ff4e00;
+  text-shadow: 2px 2px #fff;
+  margin: 20px 0 10px 0;
+  font-size: 2.5rem;
+}
+
+#gameContainer {
   position: relative;
   width: 640px;
   height: 480px;
-  border-radius: 12px;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  background: #000;
 }
 
-.camera-wrapper video {
+canvas, video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(1.1);
 }
 
-.camera-wrapper canvas {
+#hud {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 10;
 }
