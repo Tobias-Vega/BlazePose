@@ -35,8 +35,8 @@ function spawnFruit() {
     return;
   }
   fruitsSpawned++;
-  const fruits = ['🍉', '🍎', '🍓', '🍊', '🍍', '🍇', '🍒'];
-  const type = fruits[Math.floor(Math.random() * fruits.length)];
+  const typesFruits = ['🍉', '🍎', '🍓', '🍊', '🍍', '🍇', '🍒'];
+  const type = typesFruits[Math.floor(Math.random() * typesFruits.length)];
   fruits.push({
     x: Math.random() * canvas.width,
     y: -30,
