@@ -96,7 +96,7 @@ async function initGame() {
     { runtime: 'tfjs', modelType: 'full', enableSmoothing: true },
   );
 
-  spawnIntervalId = setInterval(spawnFruit, 2500);
+  spawnIntervalId = setInterval(spawnFruit, 2000);
   requestAnimationFrame(detectPose);
 }
 
